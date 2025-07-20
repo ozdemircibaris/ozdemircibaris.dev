@@ -7,11 +7,11 @@ export default function Home() {
         {/* Profile Image */}
         <div>
           <Image
-            src="/avatar3.webp"
+            src="/avatar.jpg"
             alt="Barış Özdemirci"
-            width={80}
-            height={80}
-            className="rounded-full w-20 h-20"
+            width={96}
+            height={96}
+            className="rounded-full w-24 h-24 object-cover object-[center_25%]"
             priority
           />
         </div>
