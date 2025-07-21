@@ -27,7 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-02B3HVZYHY" strategy="afterInteractive" />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_KEY}`}
+          strategy="afterInteractive"
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
