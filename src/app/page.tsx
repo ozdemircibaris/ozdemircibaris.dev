@@ -5,13 +5,13 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center px-8">
       <div className="max-w-md w-full space-y-6">
         {/* Profile Image */}
-        <div>
+        <div className="w-24 h-24 rounded-full overflow-hidden">
           <Image
             src="/avatar.jpg"
             alt="Barış Özdemirci"
             width={96}
             height={96}
-            className="rounded-full w-24 h-24 object-cover object-[center_25%]"
+            className="w-full h-full object-cover object-[center_25%] scale-125"
             priority
           />
         </div>
@@ -26,31 +26,31 @@ export default function Home() {
         <div>
           <p className="text-base font-sans leading-relaxed tracking-tight text-gray-true-400">
             Full-stack developer based in Berlin, Germany. I specialize in building scalable systems and clean user
-            interfaces using React, React Native, Node.js, and TypeScript. Currently open to freelance or consulting
-            opportunities.
+            interfaces using React, React Native, Node.js, and TypeScript. Focused on delivering scalable, domain-driven
+            systems for startups and early-stage products.
           </p>
         </div>
 
         {/* Contact Icons */}
-        <div className="flex space-x-4">
+        <div className="flex gap-4">
           {/* Email */}
           <a
             href="mailto:ozdemircibaris@gmail.com"
             aria-label="Send email to ozdemircibaris@gmail.com"
-            className="text-gray-true-300 hover:text-gray-true-100 hover:scale-110 transition-all duration-200"
+            className="text-gray-true-300 hover:text-gray-true-100 hover:scale-105 transition-all duration-200"
           >
             <svg
-              width="24"
-              height="24"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-10 5L2 7" />
             </svg>
           </a>
 
@@ -60,19 +60,20 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit Barış Özdemirci's GitHub profile"
-            className="text-gray-true-300 hover:text-gray-true-100 hover:scale-110 transition-all duration-200"
+            className="text-gray-true-300 hover:text-gray-true-100 hover:scale-105 transition-all duration-200"
           >
             <svg
-              width="24"
-              height="24"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
           </a>
 
@@ -82,20 +83,20 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit Barış Özdemirci's LinkedIn profile"
-            className="text-gray-true-300 hover:text-gray-true-100 hover:scale-110 transition-all duration-200"
+            className="text-gray-true-300 hover:text-gray-true-100 hover:scale-105 transition-all duration-200"
           >
             <svg
-              width="24"
-              height="24"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
             >
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-              <rect x="2" y="9" width="4" height="12" />
+              <rect width="4" height="12" x="2" y="9" />
               <circle cx="4" cy="4" r="2" />
             </svg>
           </a>
